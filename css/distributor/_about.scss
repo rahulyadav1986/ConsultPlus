@@ -1,0 +1,81 @@
+
+
+
+.about_section{
+    width: 100%; flex-wrap: wrap;
+    .left_content{
+        text-align: right; max-width: 63.5rem;
+        .custom_heading{
+            margin-bottom: 2.5rem;
+        }
+        p{
+            font-size: 1.5rem; line-height: 2.8rem;
+        }
+        .custom_button{
+            margin-top: 4rem;
+        }
+    }
+    .right_content{
+        position: relative; order: 2;
+        .avator{
+            width: 100%;
+        }
+        .inner{
+            width: 23.7rem; height: 28rem; background-color: var(--primary-color); position: absolute; top: 17.2rem; left: 0; right: 0; margin: auto; border: var(--white-color) 6px solid; box-shadow: rgba(154,154,154,.3) 9px 0 1.6rem;
+            .cover{
+                width: 19.2rem; height: 23rem; border: rgba(255,255,255,.2) 1px solid;  text-align: center; color: var(--white-color); overflow: hidden; position: relative;
+                .badge{
+                    position: absolute; top: -2.2rem; left: 0; right: 0; margin: auto; height: 11.2rem;
+                }
+                span{
+                    font-size: 1rem; text-transform: uppercase; font-family: var(--heading-font); line-height: 2.3rem; margin-bottom: 2rem;
+                    b{
+                        font-weight: 600; font-size: 7.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .about_section {
+        .left_content{
+            padding-right: 5rem;
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    .about_section {
+        .container{
+            flex-direction: column;
+        }
+        .left_content{
+            order: 2; max-width: 100%; padding-right: 0;  text-align: center; padding-top: 5rem;
+        }
+        .right_content{
+            order: 1; max-width: 100%; width: 100%;  margin-bottom: 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .about_section {
+       
+        .left_content{
+           padding-top: 12rem;
+        }
+        
+    }
+}
+
+@media only screen and (max-width:450px){
+    .about_section {
+       
+        .left_content{
+           padding-top: 20rem;
+        }
+        
+    }
+}

@@ -1,0 +1,66 @@
+
+.testimonials_section{
+    width: 100%; background-color: var(--primary-color); text-align: center;
+    .custom_heading{
+        h2{
+            color: var(--white-color);
+        }
+        h3{
+            color: rgba(255,255,255,.5);
+        }
+    }
+    .main_section{
+        width: 100%; padding:0 11rem; margin-top: 4.5rem; position: relative;
+        &::before{
+            background-image: url(../images/icon_quote.png); width: 6.8rem; height: 4.7rem; background-size: contain; content: ""; position: absolute; top: 0; left: 0;
+        }
+        &::after{
+            background-image: url(../images/icon_quote2.png); width: 6.8rem; height: 4.7rem; background-size: contain; content: ""; position: absolute; top: 0; right: 0;
+        }
+        p{
+            color:var(--white-color); font-size: 1.5rem; line-height: 2.8rem;
+        }
+        .client_details{
+            display: inline-block; margin-top: 3rem; 
+            img{
+                width: 6.7rem; height: 6.7rem; border-radius: 100%;   margin-bottom: 1rem; display: inline-block; 
+            }
+            h5, h6{
+                color: var(--white-color); 
+            }
+            h5{
+                text-transform: uppercase; font-size: 1.4rem; font-weight: 700; margin-bottom: 2px; display: block;
+            }
+            h6{
+                text-transform: capitalize; font-size: 1.5rem; font-weight: normal;
+            }
+        }
+        .owl-dots{
+            position: absolute; bottom: -7.6rem; left: 0; right: 0; margin: auto;
+            button{
+                span{
+                    width: 1.7rem; height: 1.7rem; border: var(--white-color) 2px solid; background-color: transparent; 
+                }
+                &.active{
+                    span{
+                        width: 1.7rem !important; border-color: var(--ternery-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .testimonials_section{
+        .main_section{
+            padding: 0 5rem;
+            &::before{
+                display: none;
+            }
+            &::after{
+                display: none;
+            }
+        }
+    }
+}

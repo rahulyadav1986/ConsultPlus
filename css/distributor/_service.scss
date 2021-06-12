@@ -1,0 +1,41 @@
+
+
+.service_section{
+    width:100%; background-color: #e7eff1; flex-wrap: wrap;
+    .main_portion{
+        margin-top: 2rem; margin-left:-1.5rem ; margin-right:-1.5rem ;
+    }
+    .portion{
+        max-width: 33.33333%; padding: 0 2rem;
+        img{
+            display: block; margin-bottom: 2.5rem;
+        }
+        .no{
+            font-size: 2rem; font-weight: normal; color: var(--ternery-color);
+        }
+        h4{
+            font-size: 1.8rem; text-transform: uppercase; margin-top: 2rem; margin-bottom: 3rem;
+        }
+        p{
+            font-size: 1.5rem; line-height: 2.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width:767px){
+    .service_section{
+        text-align: center;
+        .main_portion{
+            flex-direction: column; margin-top: 5rem;
+            .portion{
+                max-width: 100%; margin-bottom: 4rem;
+                img{
+                    display: inline-block;
+                }
+                .no{
+                    width: 100%; display: block;
+                }
+            }
+        }
+    }
+}
